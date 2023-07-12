@@ -1,0 +1,33 @@
+{
+  "name": "lab-otplib",
+  "version": "1.0.0",
+  "description": "usage tests of the otplib",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-secret": "node src/generate-secret.js",
+    "generate-code": "node src/get-otp-code.js",
+    "check-code": "node src/check-otp-code.js",
+    "start": "npm run generate-code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erkobridee/lab-otplib.git"
+  },
+  "keywords": [
+    "nodejs",
+    "otplib",
+    "tests",
+    "lab"
+  ],
+  "author": "Erko Bridee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erkobridee/lab-otplib/issues"
+  },
+  "homepage": "https://github.com/erkobridee/lab-otplib#readme",
+  "dependencies": {
+    "otplib": "^12.0.1"
+  }
+}
